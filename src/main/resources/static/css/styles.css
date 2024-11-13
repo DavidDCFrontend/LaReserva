@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(165, 165, 165);
+}
+
+body > div:nth-child(1) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+body > div:nth-child(1) > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+body > div:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+body > div:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+body > div:nth-child(4) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+body > div:nth-child(2) > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+body > div:nth-child(3) > div {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: white 2px solid;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body > div:nth-child(3) > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+form {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: white 2px solid;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+form > div {
+    margin-top: 10px;
+}
+
+form > div:last-child {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+input[type="number"]{
+    width: 50px;
+    
+}
+
+input[type="submit"]{
+    color:white;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+select {
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 2px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+form > div:nth-child(4) > p {
+    color: rgb(157, 35, 35);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}

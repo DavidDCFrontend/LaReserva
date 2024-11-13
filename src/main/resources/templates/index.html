@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la reserva</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div><p><strong>RESERVA DE HABITACIÓN</strong></p></div>
+    <div><p><strong>Datos de la reserva</strong></p></div>
+    <form action="/confirmacion" method="post">
+            <div>
+                <label>Nº Adultos: </label><input type="number" min="0" max="15" step="1" name="numAdults" th:value="${booking.numAdults}"/>
+                <label>Nº Niños: </label><input type="number" min="0" max="15" step="1" name="numChildren" th:value="${booking.numChildren}"/>
+            </div>
+            <div>
+                <label>Tipo: </label><select required name="type">
+                                        <option value="Normal" selected>Normal</option>
+                                        <option value="Senior">Senior</option>
+                                        <option value="Villa">Villa</option>
+                                    </select>
+            </div>
+            <div>
+                <label>F. Entrada: </label><input type="date" name="fentrada" th:value="${booking.fEntrada}"/>  <!-- value="YYYY-MM-DD" -->
+                <label>F. Salida: </label><input type="date" name="fsalida" th:value="${booking.fSalida}"/>
+            </div>
+            <div>
+                <input type="submit" value="Reservar"/>
+                <p th:if="${!booking.errors.isEmpty()}" th:each= "error : ${booking.errors}" th:text="${error}"></p>
+            </div>
+    </form>
+</body>
+</html>
